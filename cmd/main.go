@@ -1,8 +1,9 @@
 package main
 
 import (
-	"backend/notifyme"
 	"fmt"
+
+	"github.com/socme-project/notifyme"
 )
 
 var telegramToken = "7640444898:AAGas29ZrF6vV8Wx8iSbyF-rNlR_QZdJShY"
