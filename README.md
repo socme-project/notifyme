@@ -21,21 +21,10 @@ import "github.com/socme-project/notifyme"
 You can then create a new notifier and send notifications through different channels. Here's a simple example:
 
 ```go
-
-package main
-
-import (
- "fmt"
-
- "github.com/socme-project/notifyme"
-)
-
-var telegramToken = "token"
-
 func main() {
 
   // Initialize the Telegram notifier with your ChatID and token
- tel := notifyme.Telegram(0, telegramToken)
+ tel := notifyme.Telegram(0, "teltoken")
 
  test, err := tel.HelperGetChatIds()
  if err != nil {
@@ -46,8 +35,6 @@ func main() {
  if chatid == 0 {
   fmt.Println("ChatId not found")
  }
-
- tel = notifyme.Telegram(chatid, telegramToken)
 
  notifiers := notifyme.Notifiers{tel}
 
