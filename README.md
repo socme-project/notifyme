@@ -56,6 +56,6 @@ func main() {
 
  // Initialize the ntfy notifier
  ntfy := notifyme.Ntfy("http://localhost:8080", "topic")
- err = ntfy.Notify("Test Ntfy", "Hello from NOTIFYme!")
+ _ = ntfy.Notify("Test Ntfy", "Hello from NOTIFYme!")
 
 }
